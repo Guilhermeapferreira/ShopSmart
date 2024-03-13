@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="cadastro.css"> <!-- Importe o mesmo CSS do login -->
+    <link rel="stylesheet" href="mediaqueries/mediaQueries.css"> <!--media queries-->
+    <link rel="stylesheet" href="normalizecss/normalize.css"> <!-- Normalizecss -->
+    <link rel="shortcut icon" href="imagns/MicrosoftTeams-image.png" type="image/x-icon"> <!--Ico-->
+
+    <link rel="shortcut icon" href="fundoshop.png" type="image/x-icon">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <!-- DIV DE TODAS -->
+    <div class="main-login">
+        <!-- Div da esquerda -->
+        <div class="left-login">
+            <h1>Faça seu Cadastro<br>E conheça os nossos Produtos</h1>
+        </div>
+        <!-- Div da direita (Cadastro) -->
+        <div class="right-login">
+            <!-- Mantenha a mesma classe do login para reutilizar o CSS -->
+            <div class="card-login">
+                <!-- Mantenha a mesma classe do login para reutilizar o CSS -->
+                <h1>CADASTRO</h1> <!-- Mude o texto para "CADASTRO" -->
+                <form action="cadastrar_login.php" method="post">
+                    <div class="textfield">
+                        <label for="usuario">Nome</label>
+                        <input type="text" name="nome" placeholder="Nome"> <!-- Nome em vez de usuário -->
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">E-mail</label>
+                        <input type="text" name="email" placeholder="E-mail"> <!-- E-mail em vez de senha -->
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" placeholder="Senha">
+                        <!-- Mantenha a senha para o cadastro -->
+                    </div>
+                    <button class="btn-login">Cadastrar</button>
+                    <!-- Mantenha o botão de classe "btn-login" para reutilizar o CSS -->
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

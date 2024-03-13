@@ -1,0 +1,91 @@
+/* Estilização básica */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilize o cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos para a imagem logo*/
+.navbar-brand img {
+    width: 50px; /* Defina o tamanho desejado */
+    height: 50px;
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover; /* Garante que a imagem mantenha suas proporções */
+}
+
+
+/* Estilize os membros da equipe */
+.member {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.member img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/* Estilo para a imagem do Instagram */
+.instagram-icon {
+    width: 20px; /* Largura da imagem do Instagram */
+    height: 20px; /* Altura da imagem do Instagram */
+    margin-left: 5px; /* Espaçamento à esquerda para separar a imagem do texto */
+    vertical-align: middle; /* Alinhar verticalmente com o texto */
+}
+
+/* Adicione este CSS para estilizar o menu hamburger */
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+/* Adicione mais estilos conforme necessário */

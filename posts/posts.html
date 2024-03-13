@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade - ShopSmart</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Seu estilo personalizado -->
+    <link rel="stylesheet" href="mediaqueries/mediaQueries.css"> <!--media queries-->
+    <link rel="stylesheet" href="normalizecss/normalize.css"> <!-- Normalizecss -->
+    <link rel="stylesheet" href="comunidade.css">  
+    <link rel="shortcut icon" href="../imagns/MicrosoftTeams-image.png" type="image/x-icon"> <!-- Ícone da loja -->
+    <link rel="shortcut icon" href="fundoshop.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="../paginaInicial/paginaPrincipal.html"><img src="../imagns/lar.png"  style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;"    alt="Página Inicial" ></a> 
+            <div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da página de Comunidade -->
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Posts</h1>
+        <!-- Formulário para os usuários postarem produtos com desconto -->
+        <form id="postForm">
+            <div class="form-group">
+                <label for="productName">Nome do Produto:</label>
+                <input type="text" class="form-control" id="productName" name="productName" required>
+            </div>
+            <div class="form-group">
+                <label for="discount">Desconto (%):</label>
+                <input type="number" class="form-control" id="discount" name="discount" min="0" max="100" required>
+            </div>
+            <div class="form-group">
+                <label for="image">Foto do Produto:</label>
+                <input type="file" accept="image/*" capture="environment" class="form-control-file" id="image" name="image" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Postar Produto</button>
+        </form>
+        <!-- Local para exibir as postagens da comunidade -->
+        <div id="posts" class="mt-4">
+            <!-- As postagens serão adicionadas dinamicamente aqui -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript e dependências -->
+    <!-- Código do jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Código do Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <!-- Código do Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript personalizado -->
+    <script src="posts.html"></script>
+</body>
+</html>

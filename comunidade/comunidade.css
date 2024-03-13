@@ -1,0 +1,139 @@
+/* Estilização básica */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilize o cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+ /* Estilos para a imagem logo*/
+ .navbar-brand img {
+    width: 50px; /* Defina o tamanho desejado */
+    height: 50px;
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover; /* Garante que a imagem mantenha suas proporções */
+}
+
+/* Estilo do feed da comunidade */
+#feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.card-post {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-post img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-post .card-body {
+    padding: 20px;
+}
+
+.card-post .author {
+    display: flex;
+    align-items: center;
+}
+
+.card-post .author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.card-post .author .username {
+    font-weight: bold;
+}
+
+.card-post .description {
+    margin-top: 10px;
+}
+
+.card-post .likes {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card-post .likes button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.card-post .likes button svg {
+    fill: #333;
+}
+
+.card-post .likes button.active svg {
+    fill: #ff4500; /* Cor do coração quando ativo (like) */
+}
+
+
+/* Estilo para o botão de postagem **********************************************/
+.btn-primary {
+    margin-bottom: 20px; /* Espaçamento abaixo do botão */
+}
+
+/* Estilo para o feed da comunidade */
+#feed .post {
+    margin-bottom: 20px; /* Espaçamento entre as postagens */
+}
+
+/* Sistema de grids */
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-lg-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-lg-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    padding-right: 15px;
+    padding-left: 15px;
+}

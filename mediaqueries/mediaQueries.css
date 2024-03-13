@@ -1,0 +1,24 @@
+/* Estilos para telas extra pequenas (Extra Small) - <576px */
+@media only screen and (max-width: 575.98px) {
+    /* Adicione aqui os estilos para telas extra pequenas */
+}
+
+/* Estilos para telas pequenas (Small) - ≥576px */
+@media only screen and (min-width: 576px) {
+    /* Adicione aqui os estilos para telas pequenas */
+}
+
+/* Estilos para telas médias (Medium) - ≥768px */
+@media only screen and (min-width: 768px) {
+    /* Adicione aqui os estilos para telas médias */
+}
+
+/* Estilos para telas grandes (Large) - ≥992px */
+@media only screen and (min-width: 992px) {
+    /* Adicione aqui os estilos para telas grandes */
+}
+
+/* Estilos para telas extra grandes (Extra Large) - ≥1200px */
+@media only screen and (min-width: 1200px) {
+    /* Adicione aqui os estilos para telas extra grandes */
+}

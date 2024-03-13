@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reclamações - ShopSmart</title>
+    <link rel="stylesheet" href="../normalizecss/normalize.css">
+    <link rel="stylesheet" href="fale_conosco.css"> <!-- Arquivo de estilos para a página de Contatos -->
+    <link rel="stylesheet" href="mediaqueries/mediaQueries.css"> <!--media queries-->
+    <link rel="stylesheet" href="normalizecss/normalize.css"> <!-- Normalizecss -->
+    <link rel="shortcut icon" href="../imagns/MicrosoftTeams-image.png" type="image/x-icon"> <!--Ico-->
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="../paginaInicial/paginaPrincipal.html"><img src="../imagns/lar.png"  alt="Página Inicial" ></a> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Sobrenois/sobrenois.html">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Produtos/produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Lojas/lojas.html">Lojas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="fale_conosco.html">Fale conosco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../linkparadown.html">Baixe nosso App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../comunidade/comunidade.html">Comunidade</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="contact-form">          
+        <h2>Registre sua Reclamação</h2>
+        <form action="#" method="post" id="complaintForm">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="complaint">Reclamação:</label>
+                <textarea id="complaint" name="complaint" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="storeAddress">Endereço da Loja (opcional):</label>
+                <textarea id="storeAddress" name="storeAddress" rows="2"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS (jQuery é necessário para o Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
