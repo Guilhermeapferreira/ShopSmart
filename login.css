@@ -210,7 +210,7 @@ body * {
 .btn-login {
     width: 100%;
     padding: 16px 0px;
-    margin: 25px;
+    margin: 10px 2px;
     border: none;
     border-radius: 8px;
     outline: none;
@@ -226,7 +226,7 @@ body * {
 .btn-cadastrar {
     width: 50%; /* Largura definida como 50% */
     padding: 16px 0px;
-    margin: 25px;
+    margin: 10px 16px;
     border: none;
     border-radius: 8px;
     outline: none;
@@ -239,10 +239,15 @@ body * {
     box-shadow: 0px 10px 40px -12px #00ff8052;
 }
 
+
+
+/* =================================================================??? =================================================================*/
+
 /* Estilo para quando o botão "Cadastrar" é hover (passar o mouse) */
 .btn-cadastrar:hover {
     background: #1a9a92; /* Cor de fundo alterada quando hover */
     color: #fff; /* Cor do texto alterada quando hover */
+
 }
 
 
@@ -252,6 +257,21 @@ body * {
     font-size: 16px; /* Defina o tamanho da fonte desejado */
     padding: 10px 20px; /* Defina o preenchimento desejado */
 }
+
+
+/* Estilização do botão "Esqueci a senha" */
+.forgot-password {
+    color: #ff6600; /* Cor do texto */
+    margin-top: 10px; /* Espaçamento superior */
+    text-decoration: none; /* Remover sublinhado */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Alteração da cor do texto quando hover (passar o mouse) */
+.forgot-password:hover {
+    color: #ff9933; /* Nova cor do texto quando hover */
+}
+
 
 
 /* FIM ESTILO LOGIN */
