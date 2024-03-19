@@ -1,0 +1,38 @@
+.carousel-control-prev,
+.carousel-control-next {
+    width: 3rem; /* Tamanho das setas */
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo */
+    border-radius: 50%; /* Bordas arredondadas */
+    border: none; /* Remover borda */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+    display: flex; /* Alinhar setas verticalmente */
+    justify-content: center; /* Alinhar setas horizontalmente */
+    align-items: center; /* Alinhar setas verticalmente */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 1.5rem; /* Tamanho do ícone */
+    height: 1.5rem;
+    background-color: transparent; /* Cor do ícone */
+}
+
+.carousel-control-prev-icon:before,
+.carousel-control-next-icon:before {
+    content: ''; /* Remover conteúdo padrão do ícone */
+    border-style: solid; /* Estilo da borda */
+    border-width: 0.2rem 0.2rem 0 0; /* Tamanho e estilo da seta */
+    border-color: white; /* Cor da seta */
+    transform: rotate(-45deg); /* Rotacionar a seta */
+}
+
+.carousel-control-next-icon:before {
+    transform: rotate(135deg); /* Rotacionar a seta */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo ao passar o mouse */
+    cursor: pointer; /* Alterar cursor ao passar o mouse */
+}

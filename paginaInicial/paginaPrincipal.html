@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../normalizecss/normalize.css"> <!--NormalizeCSS-->
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="paginaPrincipla.css">
+    <link rel="stylesheet" href="setas_Imagens.css">
 
     <link rel="shortcut icon" href="sacolas-de-compras.ico" type="image/x-icon"> <!--Ico-->
 
@@ -20,37 +21,38 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../paginaInicial/paginaPrincipal.html"><img  src="../imagns/shopsmart (1).png" alt="Página Inicial"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../paginaInicial/paginaPrincipal.html"><img src="../imagns/shopsmart.png" alt="Página Inicial"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Sobrenois/sobrenois.html">Sobre Nós</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Produtos/produtos.html">Produtos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Lojas/lojas.html">Lojas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Divulgue Seus produtos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../fale_conosco/fale_conosco.html">Fale conosco</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../linkparadown.html">Baixe nosso App</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../login.html">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../comunidade/comunidade.html">Comunidade</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../SobreNos/sobreNos.html">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Produtos/produtos.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Lojas/lojas.html">Lojas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Divulgue Seus Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../fale_conosco/fale_conosco.html">Fale Conosco</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../linkparadown.html">Baixe nosso App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../comunidade/comunidade.html">Comunidade</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -69,7 +71,25 @@
                     <a href="#" class="btn btn-primary">Baixe Agora</a>
                 </div>
                 <div class="col-md-6">
-                    <img src="promo-image.jpg" alt="Ofertas Especiais" class="img-fluid">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../imagns/lar.png" alt="Oferta Especial 1" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagns/logoShopRedondosemfundo.png" alt="Oferta Especial 2" class="d-block w-100">
+                            </div>
+                            <!-- Adicione mais imagens conforme necessário -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,11 +101,8 @@
         </div>
     </footer>
 
-    <!-- Adicione Bootstrap JS (opcional) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-      <!-- Bootstrap JS (jQuery é necessário para o Bootstrap) -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Adicione Bootstrap JS (jQuery é necessário para o Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS -->
 </body>
 </html>

@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reclamações - ShopSmart</title>
+    <title>Obrigado - ShopSmart</title>
+    <!-- Normalize CSS -->
     <link rel="stylesheet" href="../normalizecss/normalize.css">
-    <link rel="stylesheet" href="fale_conosco.css"> <!-- Arquivo de estilos para a página de Contatos -->
-    <link rel="stylesheet" href="mediaqueries/mediaQueries.css"> <!-- Media queries -->
-    <link rel="stylesheet" href="normalizecss/normalize.css"> <!-- Normalizecss -->
-    <link rel="shortcut icon" href="../imagns/MicrosoftTeams-image.png" type="image/x-icon"> <!-- Ícone -->
+    <!-- estilo personalizado -->
+    <link rel="stylesheet" href="fale_conosco.css">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="../paginaInicial/paginaPrincipal.html"><img src="../imagns/lar.png"  alt="Página Inicial"></a> 
+            <a class="navbar-brand" href="../paginaInicial/paginaPrincipal.html"><img src="../imagns/lar.png" alt="Página Inicial"></a> 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -31,7 +30,7 @@
                         <a class="nav-link" href="../Lojas/lojas.html">Lojas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="fale_conosco.html">Fale conosco</a>
+                        <a class="nav-link" href="fale_conosco.html">Fale conosco</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../linkparadown.html">Baixe nosso App</a>
@@ -46,31 +45,9 @@
             </div>
         </nav>
     </header>
-    <section class="contact-form">          
-        <h2>Registre sua Reclamação</h2>
-        <form action="obrigado_por_enviar.html" method="post" id="complaintForm">
-            <div class="form-group">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Telefone:</label>
-                <input type="tel" id="phone" name="phone" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="storeID">ID da Loja (opcional):</label>
-                <input type="text" id="storeID" name="storeID" class="form-control" placeholder="Caso sua reclamação seja direcionada a alguma loja">
-            </div>
-            <div class="form-group">
-                <label for="complaint">Reclamação:</label>
-                <textarea id="complaint" name="complaint" class="form-control" rows="4"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+    <section class="thank-you text-center py-5">
+        <h2>Obrigado por entrar em contato</h2>
+        <p>Entraremos em contato por e-mail ou pelo celular</p>
     </section>
 
     <footer class="bg-dark text-white text-center py-3">
